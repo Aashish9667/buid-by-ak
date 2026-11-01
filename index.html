@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff0f6" />
+    <title>Sweetie | A Little World of Love</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Floating hearts background -->
+      <div class="hearts-bg" id="heartsBg"></div>
+
+      <!-- HOME SCREEN -->
+      <section class="screen active" id="home">
+        <div class="top-bar">
+          <span>💗 My Little World</span>
+          <span>♡</span>
+        </div>
+
+        <div class="home-content">
+          <div class="big-heart">💗</div>
+
+          <p class="small-heading">A SPECIAL PLACE FOR</p>
+
+          <h1>Hello, <span>Sweetie</span>! 🌸</h1>
+
+          <p class="home-description">
+            I made something special just for you. Because you deserve all the
+            happiness in this world.
+          </p>
+
+          <button class="primary-btn" onclick="showScreen('memories')">
+            Explore Our World 💕
+          </button>
+
+          <p class="bottom-note">Made with endless love ♡</p>
+        </div>
+      </section>
+
+      <!-- MEMORIES SCREEN -->
+      <section class="screen" id="memories">
+        <div class="page-header">
+          <p>OUR LITTLE UNIVERSE ✨</p>
+          <h2>Beautiful Memories</h2>
+          <span>Every moment with you is special.</span>
+        </div>
+
+        <div class="memory-grid">
+          <div class="memory-card">
+            <img
+              src="assets/WhatsApp Image 2026-11-01 at 6.00.07 PM.jpeg"
+              alt="Memory one"
+            />
+            <p>Our beautiful moment 💗</p>
+          </div>
+
+          <div class="memory-card">
+            <img
+              src="assets/WhatsApp Image 2026-11-01 at 6.00.07 PM.jpeg"
+              alt="Memory two"
+            />
+            <p>Sweet memories 🌸</p>
+          </div>
+
+          <div class="memory-card">
+            <img
+              src="assets/WhatsApp Image 2026-11-01 at 6.00.01 PM.jpeg"
+              alt="Memory three"
+            />
+            <p>My favourite smile 🥹</p>
+          </div>
+
+          <div class="memory-card">
+            <img
+              src="assets/WhatsApp Image 2026-11-01 at 6.00.08 PM.jpeg"
+              alt="Memory four"
+            />
+            <p>Forever in my heart ❤️</p>
+          </div>
+        </div>
+
+        <div class="cute-message">
+          "Some moments become memories, but some people become your favourite
+          feeling."
+        </div>
+      </section>
+
+      <!-- LOVE LETTER SCREEN -->
+      <section class="screen" id="letter">
+        <div class="page-header">
+          <p>WORDS FROM MY HEART 💌</p>
+          <h2>A Little Love Letter</h2>
+        </div>
+
+        <div class="letter-paper">
+          <div class="letter-icon">💌</div>
+
+          <h3>Happy Birthday to my favourite person, my Sweetie!</h3>
+
+          <p>
+            Sabse pehle, main bas tumhe ye batana chahta hoon ki main kitna
+            lucky hoon ki tum meri life mein ho. ❤️ Tum sirf mere liye ek
+            special person nahi ho, balki meri happiness, mera sukoon, meri
+            sabse badi smile aur kabhi-kabhi mera sabse bada headache bhi ho! 😂
+            Lekin sach kahun toh main is headache ko duniya ki kisi bhi cheez ke
+            liye exchange nahi karna chahunga. 🥹❤️
+          </p>
+
+          <p>
+            Kaash main time ko pause kar sakta aur tumhare saath bitaye har
+            khoobsurat moment ko hamesha ke liye rok sakta. ⏳❤️ Tumhari smile
+            mere bure se bure din ko bhi achha bana deti hai 🥰 tumhari
+            chhoti-chhoti baatein mere dil ko khush kar deti hain 💗 aur tumhari
+            silly fights bhi mujhe secretly bahut achhi lagti hain, argument ke
+            time main ye kabhi accept nahi karunga! 😂🙈 Lekin main perfect nahi
+            hoon, kabhi tumhe annoy bhi kar deta hoon, par ek baat ka promise
+            karta hoon ki mere feelings tumhare liye hamesha genuine rahengi.
+            ❤️🫂
+          </p>
+
+          <p>
+            Main dua karta hoon ki tumhari life hamesha happiness, success,
+            endless laughter, beautiful surprises aur bahut saare pyaar se bhari
+            rahe. 🧿💖 Kabhi apni smile khona mat, kabhi apne crazy little self
+            ko badalna mat, aur kabhi ye mat bhoolna ki tum mere liye kitni
+            special ho. 🥹❤️ Aur haan, aaj tum ek saal aur badi ho gayi ho,
+            lekin tension mat lo, mere liye tum hamesha meri cute si baby hi
+            rahogi! 😂😘
+          </p>
+
+          <p>
+            Once again, Happy Birthday, Sweetie. 🎂❤️ Main tere se bas itna
+            chahta hu ki tu muje thoda Jyada time de taki main hamesha tumhari
+            us beautiful smile ki wajah ban sakun. 🥺💗❤️
+          </p>
+
+          <h3 class="letter-sign">
+            With lots of love,<br />
+            Yours always 💗
+          </h3>
+        </div>
+      </section>
+
+      <!-- MUSIC SCREEN -->
+      <section class="screen" id="music">
+        <div class="page-header">
+          <p>OUR SPECIAL SONG 🎵</p>
+          <h2>Music For You</h2>
+          <span>A little melody, a lot of feelings.</span>
+        </div>
+
+        <div class="music-player">
+          <div class="album-art" id="albumArt">
+            <span>💗</span>
+          </div>
+
+          <h3>Our Special Song</h3>
+          <p>Just for Sweetie ♡</p>
+
+          <audio
+            id="audioPlayer"
+            src="assets/beatdreamer-happy-birthday-in-english-male-15023.mp3"
+            preload="metadata"
+          ></audio>
+
+          <div class="music-progress">
+            <span id="currentTime">0:00</span>
+            <input type="range" id="progress" value="0" min="0" max="100" />
+            <span id="duration">0:00</span>
+          </div>
+
+          <div class="music-controls">
+            <button id="playBtn" onclick="toggleMusic()">▶</button>
+          </div>
+
+          <p class="music-caption">Close your eyes and feel the music. 🥹</p>
+        </div>
+      </section>
+
+      <!-- SECRET SURPRISE SCREEN -->
+      <section class="screen" id="secret">
+        <div class="page-header">
+          <p>ONLY FOR YOU 🔐</p>
+          <h2>A Little Secret</h2>
+          <span>Something special is waiting inside.</span>
+        </div>
+
+        <div class="secret-box">
+          <div class="gift-icon" id="giftIcon">🎁</div>
+
+          <h3>Can you unlock my surprise?</h3>
+
+          <p>Enter the secret password below.</p>
+
+          <input
+            type="password"
+            id="secretPassword"
+            placeholder="Enter secret password"
+            autocomplete="off"
+          />
+
+          <button class="primary-btn" onclick="unlockSurprise()">
+            Unlock My Surprise 💗
+          </button>
+
+          <p id="passwordMessage"></p>
+
+          <div id="unlockedMessage" class="hidden">
+            <h2>Yayyy! 🥹💗</h2>
+            <p>You unlocked something special!</p>
+
+            <button class="primary-btn" onclick="showScreen('final')">
+              Open Your Surprise 🎀
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL SURPRISE SCREEN -->
+      <section class="screen" id="final">
+        <div class="final-content">
+          <div class="final-heart">❤️</div>
+
+          <p class="small-heading">A MESSAGE JUST FOR YOU</p>
+
+          <h1>Sweetie,</h1>
+
+          <h2>I love you ❤️</h2>
+
+          <p class="final-description">
+            No matter how many words I write, they will never be enough to
+            explain how special you are.
+          </p>
+
+          <div class="final-decoration">💗 🌸 💗</div>
+
+          <button class="primary-btn" onclick="celebrate()">
+            One More Hug! 🤗
+          </button>
+
+          <p class="bottom-note">Forever special. Forever you. ♡</p>
+        </div>
+      </section>
+
+      <!-- BOTTOM NAVIGATION -->
+      <nav class="bottom-nav">
+        <button
+          class="nav-item active"
+          data-screen="home"
+          onclick="showScreen('home')"
+        >
+          <span>🏠</span>
+          <small>Home</small>
+        </button>
+
+        <button
+          class="nav-item"
+          data-screen="memories"
+          onclick="showScreen('memories')"
+        >
+          <span>📸</span>
+          <small>Memories</small>
+        </button>
+
+        <button
+          class="nav-item"
+          data-screen="letter"
+          onclick="showScreen('letter')"
+        >
+          <span>💌</span>
+          <small>Letter</small>
+        </button>
+
+        <button
+          class="nav-item"
+          data-screen="music"
+          onclick="showScreen('music')"
+        >
+          <span>🎵</span>
+          <small>Music</small>
+        </button>
+
+        <button
+          class="nav-item"
+          data-screen="secret"
+          onclick="showScreen('secret')"
+        >
+          <span>🎁</span>
+          <small>Secret</small>
+        </button>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
